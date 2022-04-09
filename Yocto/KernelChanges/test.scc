@@ -1,0 +1,2 @@
+kconf non-hardware cfgtest.cfg
+patch 0001-Test-driver.patch
