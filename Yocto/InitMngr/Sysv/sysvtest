@@ -1,0 +1,20 @@
+#! /bin/sh
+# /etc/init.d/start_sample_app
+#
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+start)
+   echo "Starting helloworld application"
+   exec /usr/bin/helloworld -s &
+      ;;
+stop)
+   echo "Stopping helloworld application"
+   start-stop-daemon --stop --name sampleApp --quiet
+   ;;
+(*))
+   echo "Usage: /etc/init.d/helloworld {start|stop}"
+   exit 1
+   ;;
+esac
+exit 0

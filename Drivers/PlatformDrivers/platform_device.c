@@ -34,8 +34,8 @@ static struct platform_device sample_device =
 {
 	.name = DRIVER_NAME,
 	.id = -1,
-	.num_resources = ARRAY_SIZE(sample_resources),
-	.resource = sample_resources,
+	//.num_resources = ARRAY_SIZE(sample_resources),
+	//.resource = sample_resources,
 	.dev = {
 		.platform_data = &gpio,
 	}
